@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RadzenDialogServiceIssue.Server", "RadzenDialogServiceIssue\Server\RadzenDialogServiceIssue.Server.csproj", "{0C097609-D8EC-4C41-BC45-6F4A86B84B26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RadzenDialogServiceIssue.Client", "RadzenDialogServiceIssue\Client\RadzenDialogServiceIssue.Client.csproj", "{5C81F681-DD6D-4F5C-B9F6-F8690A7D0E2C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RadzenDialogServiceIssue.Shared", "RadzenDialogServiceIssue\Shared\RadzenDialogServiceIssue.Shared.csproj", "{914C695E-41FD-43E7-AB07-593362583E3A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0C097609-D8EC-4C41-BC45-6F4A86B84B26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C097609-D8EC-4C41-BC45-6F4A86B84B26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C097609-D8EC-4C41-BC45-6F4A86B84B26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C097609-D8EC-4C41-BC45-6F4A86B84B26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C81F681-DD6D-4F5C-B9F6-F8690A7D0E2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C81F681-DD6D-4F5C-B9F6-F8690A7D0E2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C81F681-DD6D-4F5C-B9F6-F8690A7D0E2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C81F681-DD6D-4F5C-B9F6-F8690A7D0E2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{914C695E-41FD-43E7-AB07-593362583E3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{914C695E-41FD-43E7-AB07-593362583E3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{914C695E-41FD-43E7-AB07-593362583E3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{914C695E-41FD-43E7-AB07-593362583E3A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B2817831-DB67-47C5-8A6E-0ADCC590220E}
+	EndGlobalSection
+EndGlobal

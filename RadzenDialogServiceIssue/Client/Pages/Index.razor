@@ -1,0 +1,61 @@
+﻿@page "/"
+
+@inject DialogService _dialogService
+
+<PageTitle>Index</PageTitle>
+
+<RadzenButton Text="Don't close on Esc" ButtonStyle="ButtonStyle.Info" Click="@(args => DialogDontCloseOnEsc())" />
+<RadzenButton Text="Do close on Esc" ButtonStyle="ButtonStyle.Danger" Click="@(args => DialogDoCloseOnEsc())" />
+
+@code
+{
+    public async Task DialogDontCloseOnEsc()
+    {
+        var rawConfirm = await _dialogService.OpenAsync(
+    "This dialog must not be closed on Esc",
+    ds =>
+    @<div>
+        <RadzenButton Text="Cancel" Click="@(new Action(() => ds.Close((bool?)null)))" ButtonStyle="ButtonStyle.Light" Style="width: 100px" />
+    </div>
+        ,
+    new DialogOptions
+            {
+                Width = "500px",
+                ShowClose = false,
+                CloseDialogOnEsc = false,
+                CloseDialogOnOverlayClick = false,
+            }
+        );
+
+        var confirm = rawConfirm as bool?;
+
+        switch (confirm)
+        {
+        }
+    }
+    
+    public async Task DialogDoCloseOnEsc()
+    {
+        var rawConfirm = await _dialogService.OpenAsync(
+    "This dialog can be closed on Esc",
+    ds =>
+    @<div>
+        <RadzenButton Text="Cancel" Click="@(new Action(() => ds.Close((bool?)null)))" ButtonStyle="ButtonStyle.Light" Style="width: 100px" />
+    </div>
+        ,
+    new DialogOptions
+            {
+                Width = "500px",
+                ShowClose = true,
+                CloseDialogOnEsc = true,
+                CloseDialogOnOverlayClick = true,
+            }
+        );
+
+        var confirm = rawConfirm as bool?;
+
+        switch (confirm)
+        {
+        }
+    }
+}
